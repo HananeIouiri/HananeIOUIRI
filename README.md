@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" alt="Anime workspace with headphones and computer monitors" src="./assets/banner-hq.jpg" />
+<img width="100%" height="350" alt="Anime workspace with headphones and computer monitors" src="./assets/banner-hq.jpg" />
 
 <h1>👋 Hi, I’m Hanane Iouiri!</h1>
 <h3>Data &amp; AI Engineer | Analytics &amp; Cloud</h3>
@@ -95,12 +95,8 @@ interests:
 ## 🔥 GitHub Streak
 
 <p align="center">
-  <img width="440" height="120" alt="Total contributions, current streak and longest streak" src="https://raw.githubusercontent.com/HananeIouiri/HananeIOUIRI/profile-stats/streak.svg" />
+  <img width="100%" alt="Total contributions, current streak and longest streak" src="https://raw.githubusercontent.com/HananeIouiri/HananeIOUIRI/profile-stats/streak.svg" />
 </p>
-
-## 🌱 Contribution activity
-
-<img alt="Public GitHub contribution activity" width="100%" src="https://raw.githubusercontent.com/HananeIouiri/HananeIOUIRI/profile-stats/activity.svg" />
 
 ## 🐍 Contribution snake
 
