@@ -95,7 +95,7 @@ interests:
 ## 🔥 GitHub Streak
 
 <p align="center">
-  <img width="100%" alt="Total contributions, current streak and longest streak" src="https://raw.githubusercontent.com/HananeIouiri/HananeIOUIRI/profile-stats/streak.svg" />
+  <img width="440" height="120" alt="Total contributions, current streak and longest streak" src="https://raw.githubusercontent.com/HananeIouiri/HananeIOUIRI/profile-stats/streak.svg" />
 </p>
 
 ## 🌱 Contribution activity
