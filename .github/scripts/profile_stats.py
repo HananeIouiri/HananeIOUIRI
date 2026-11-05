@@ -101,3 +101,78 @@ for x, week in enumerate(weeks):
 body += f'<text x="35" y="200" fill="#c9d1d9" font-size="13">{calendar["totalContributions"]:,} contributions in the last year</text>'
 body += f'<text x="35" y="222" fill="#8b949e" font-size="11">Updated {stamp} UTC · Activity from GitHub contribution calendar</text>'
 (OUT / "activity.svg").write_text(svg(880, 245, "Contribution activity", body, "GitHub contribution calendar for the past year"), encoding="utf-8")
+
+
+# Build an all-time streak card from yearly contribution calendars.
+from datetime import date, timedelta
+
+year_query = """query($login: String!, $from: DateTime!, $to: DateTime!) {
+  user(login: $login) {
+    contributionsCollection(from: $from, to: $to) {
+      contributionCalendar {
+        weeks { contributionDays { date contributionCount } }
+      }
+    }
+  }
+}"""
+today = datetime.now(timezone.utc).date()
+days = {}
+for year in range(int(profile["created_at"][:4]), today.year + 1):
+    start = f"{year}-01-01T00:00:00Z"
+    end = f"{year}-12-31T23:59:59Z" if year < today.year else datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    cal = api("graphql", {"query": year_query, "variables": {"login": OWNER, "from": start, "to": end}})["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+    for week in cal["weeks"]:
+        for day in week["contributionDays"]:
+            dt = date.fromisoformat(day["date"])
+            if dt.year == year and dt <= today:
+                days[dt] = day["contributionCount"]
+
+best = run = 0
+best_start = best_end = run_start = None
+previous = None
+for dt in sorted(days):
+    if days[dt] > 0:
+        if previous is not None and dt == previous + timedelta(days=1):
+            run += 1
+        else:
+            run = 1
+            run_start = dt
+        previous = dt
+        if run > best:
+            best, best_start, best_end = run, run_start, dt
+    else:
+        run = 0
+        previous = None
+
+anchor = today if days.get(today, 0) else today - timedelta(days=1)
+current = 0
+cursor = anchor
+while days.get(cursor, 0) > 0:
+    current += 1
+    cursor -= timedelta(days=1)
+
+def date_label(dt):
+    return dt.strftime("%b %d, %Y") if dt else "No streak yet"
+
+current_range = (date_label(cursor + timedelta(days=1)) + " - " + date_label(anchor)) if current else "Start with a contribution today"
+best_range = (date_label(best_start) + " - " + date_label(best_end)) if best else "No streak yet"
+total = sum(days.values())
+joined = date_label(date.fromisoformat(profile["created_at"][:10]))
+body = '<path d="M285 32V190M595 32V190" stroke="#484154"/>'
+body += '<circle cx="440" cy="79" r="43" fill="none" stroke="#a879ff" stroke-width="5"/>'
+for x, number, label, detail in [
+    (148, total, "Total Contributions", joined + " - Present"),
+    (440, current, "Current Streak", current_range),
+    (732, best, "Longest Streak", best_range),
+]:
+    number_color = "#ffbd70" if x == 440 else "#a879ff"
+    body += f'<text x="{x}" y="90" text-anchor="middle" fill="{number_color}" font-size="32" font-weight="700">{number:,}</text>'
+    body += f'<text x="{x}" y="153" text-anchor="middle" fill="{number_color}" font-size="16" font-weight="600">{label}</text>'
+    body += f'<text x="{x}" y="181" text-anchor="middle" fill="#64ffda" font-size="11">{escape(detail)}</text>'
+body += f'<text x="440" y="220" text-anchor="middle" fill="#8b949e" font-size="10">GitHub contribution calendar · UTC · Updated {stamp}</text>'
+card = ('<svg xmlns="http://www.w3.org/2000/svg" width="880" height="240" viewBox="0 0 880 240" role="img">'
+        '<title>GitHub contribution streaks</title>'
+        '<desc>All-time contribution total, current streak and longest streak, measured by UTC calendar days.</desc>'
+        '<rect x="1" y="1" width="878" height="238" rx="10" fill="#14121b" stroke="#a879ff"/>'
+        '<g font-family="Segoe UI,Arial,sans-serif">' + body + '</g></svg>')
+(OUT / "streak.svg").write_text(card, encoding="utf-8")
