@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" height="350" alt="Anime workspace with headphones and computer monitors" src="./assets/banner-hq.jpg" />
+<img width="100%" height="400" alt="Anime workspace with headphones and computer monitors" src="./assets/banner-hq.jpg" />
 
 <h1>👋 Hi, I’m Hanane Iouiri!</h1>
 <h3>Data &amp; AI Engineer | Analytics &amp; Cloud</h3>
