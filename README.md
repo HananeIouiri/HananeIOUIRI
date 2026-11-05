@@ -1,6 +1,9 @@
 <div align="center">
 
-<img width="100%" alt="Hanane Iouiri — Data and AI Engineer" src="https://capsule-render.vercel.app/api?type=venom&amp;color=0:0d1117,50:064e3b,100:059669&amp;height=230&amp;section=header&amp;text=Hanane%20Iouiri&amp;fontSize=52&amp;fontColor=ffffff&amp;fontAlignY=38&amp;desc=Data%20%26%20AI%20Engineer%20%7C%20Analytics%20%26%20Cloud&amp;descAlignY=59&amp;descSize=18" />
+<img width="100%" alt="Anime workspace with headphones and computer monitors" src="./assets/banner.png" />
+
+<h1>Hi, I’m Hanane Iouiri</h1>
+<h3>Data &amp; AI Engineer | Analytics &amp; Cloud</h3>
 
 <img alt="Data Engineering, Applied AI, Analytics and Cloud" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=600&amp;size=20&amp;pause=1500&amp;color=34D399&amp;center=true&amp;vCenter=true&amp;width=650&amp;lines=Building+data+pipelines+that+deliver+insights;Exploring+LLMs%2C+RAG+and+Computer+Vision;Connecting+business+needs+with+intelligent+solutions" />
 
