@@ -1,0 +1,33 @@
+name: Refresh profile statistics
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/profile-stats.yml"
+      - ".github/scripts/profile_stats.py"
+  workflow_dispatch:
+  schedule:
+    - cron: "37 3 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: profile-statistics
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate repository-hosted SVG cards
+        run: python3 .github/scripts/profile_stats.py
+        env:
+          PROFILE_OWNER: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish cards
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: profile-stats
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

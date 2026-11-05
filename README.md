@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="900" height="300" alt="Anime workspace with headphones and computer monitors" src="./assets/banner.png" />
+<img width="100%" alt="Anime workspace with headphones and computer monitors" src="./assets/banner-hq.jpg" />
 
 <h1>👋 Hi, I’m Hanane Iouiri!</h1>
 <h3>Data &amp; AI Engineer | Analytics &amp; Cloud</h3>
@@ -96,14 +96,14 @@ interests:
 
 <div align="center">
 
-<img alt="GitHub statistics" height="170" src="https://github-readme-stats.vercel.app/api?username=HananeIouiri&amp;show_icons=true&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=34d399&amp;icon_color=10b981&amp;text_color=c9d1d9" />
-<img alt="Most used languages across public repositories" height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HananeIouiri&amp;layout=compact&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=34d399&amp;text_color=c9d1d9" />
+<img alt="GitHub statistics" height="170" src="https://raw.githubusercontent.com/HananeIouiri/HananeIOUIRI/profile-stats/stats.svg" />
+<img alt="Most used languages across public repositories" height="170" src="https://raw.githubusercontent.com/HananeIouiri/HananeIOUIRI/profile-stats/languages.svg" />
 
 </div>
 
 ## 🌱 Contribution activity
 
-<img alt="Public GitHub contribution activity" width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=HananeIouiri&amp;bg_color=0d1117&amp;color=34d399&amp;line=10b981&amp;point=6ee7b7&amp;area=true&amp;hide_border=true" />
+<img alt="Public GitHub contribution activity" width="100%" src="https://raw.githubusercontent.com/HananeIouiri/HananeIOUIRI/profile-stats/activity.svg" />
 
 ## 🐍 Contribution snake
 
