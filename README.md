@@ -92,14 +92,11 @@ interests:
 
 ---
 
-## 📊 GitHub at a glance
+## 🔥 GitHub Streak
 
-<div align="center">
-
-<img alt="GitHub statistics" height="170" src="https://raw.githubusercontent.com/HananeIouiri/HananeIOUIRI/profile-stats/stats.svg" />
-<img alt="Most used languages across public repositories" height="170" src="https://raw.githubusercontent.com/HananeIouiri/HananeIOUIRI/profile-stats/languages.svg" />
-
-</div>
+<p align="center">
+  <img width="100%" alt="Total contributions, current streak and longest streak" src="https://raw.githubusercontent.com/HananeIouiri/HananeIOUIRI/profile-stats/streak.svg" />
+</p>
 
 ## 🌱 Contribution activity
 
