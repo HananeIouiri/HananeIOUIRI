@@ -2,7 +2,7 @@
 
 <img width="100%" alt="Anime workspace with headphones and computer monitors" src="./assets/banner.png" />
 
-<h1>Hi, I’m Hanane Iouiri</h1>
+<h1>👋 Hi, I’m Hanane Iouiri!</h1>
 <h3>Data &amp; AI Engineer | Analytics &amp; Cloud</h3>
 
 <img alt="Data Engineering, Applied AI, Analytics and Cloud" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=600&amp;size=20&amp;pause=1500&amp;color=34D399&amp;center=true&amp;vCenter=true&amp;width=650&amp;lines=Building+data+pipelines+that+deliver+insights;Exploring+LLMs%2C+RAG+and+Computer+Vision;Connecting+business+needs+with+intelligent+solutions" />
@@ -15,16 +15,15 @@ Data Engineering · Applied AI · Analytics
 
 </div>
 
-## 👩‍💻 About me
+## 🌷 About Me
 
-I'm a computer science engineering graduate from **ENSET Mohammedia**, specializing in **Big Data & Cloud Computing**. I enjoy connecting business needs with data engineering, analytics, and applied AI.
-
-- **Data engineering:** ETL pipelines, dimensional modeling, and batch and streaming architectures.
-- **Applied AI:** local RAG assistants, conversational AI, computer vision, and OCR.
-- **Analytics:** SQL analysis, KPI definition, and Power BI dashboards.
-- **Delivery:** requirements analysis, documentation, and Agile collaboration.
-
-During my final-year internship at **Scalian Morocco, on an Alstom mission**, I worked on automated test reporting, data warehousing, anomaly detection, and a local RAG assistant.
+👩‍💻 Computer science engineer exploring **Data Engineering, Analytics, and Applied AI**.<br/>
+👩‍🎓 Engineering graduate in **Big Data & Cloud Computing** from **ENSET Mohammedia**.<br/>
+🧠 Project experience with **LLMs, RAG, Computer Vision, and OCR**.<br/>
+📊 Building **data pipelines, SQL analyses, and Power BI dashboards** that answer business questions.<br/>
+🌱 Curious about practical AI solutions and the stories behind data.<br/>
+💭 I enjoy investigation, problem solving, and sharing knowledge.<br/>
+🌐 Explore my projects on [my portfolio](https://hanane-iouiri.netlify.app/).<br/>
 
 <details>
 <summary><b>A little more about me</b></summary>
@@ -59,27 +58,37 @@ interests:
 
 ---
 
-## 🛠️ Tech stack
+## 💻 Tech Stack
 
-**Data & analytics**
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+<br/>
 
-![Python](https://img.shields.io/badge/Python-064e3b?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-065f46?style=for-the-badge)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-047857?style=for-the-badge&logo=postgresql&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power_BI-059669?style=for-the-badge)
-![Spark](https://img.shields.io/badge/Apache_Spark-0f766e?style=for-the-badge&logo=apachespark&logoColor=white)
-![Kafka](https://img.shields.io/badge/Apache_Kafka-115e59?style=for-the-badge&logo=apachekafka&logoColor=white)
-![Airflow](https://img.shields.io/badge/Apache_Airflow-134e4a?style=for-the-badge&logo=apacheairflow&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+<br/>
 
-**AI & engineering**
+![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
+![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white)
+![Hadoop](https://img.shields.io/badge/Hadoop-66CCFF?style=for-the-badge&logo=apachehadoop&logoColor=black)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+<br/>
 
-![scikit-learn](https://img.shields.io/badge/scikit--learn-064e3b?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-047857?style=for-the-badge&logo=opencv&logoColor=white)
-![RAG](https://img.shields.io/badge/LLMs_%26_RAG-059669?style=for-the-badge)
-![FastAPI](https://img.shields.io/badge/FastAPI-0f766e?style=for-the-badge&logo=fastapi&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-115e59?style=for-the-badge&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-134e4a?style=for-the-badge)
-![Git](https://img.shields.io/badge/Git-064e3b?style=for-the-badge&logo=git&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logoColor=black)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 
 ---
 
